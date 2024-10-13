@@ -1,0 +1,22 @@
+Veritabanı Dosyalarını Yükleme ve Bağlantı Bilgilerini Güncelleme Talimatları
+
+1.Veritabanı Dosyalarını Taşıma ve Ekleme:
+
+Hastane.mdf ve Hastane.ldf dosyalarını C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA dizinine taşıyın.
+SQL Server Management Studio (SSMS) uygulamasını açın.
+Sol paneldeki "Databases" (Veritabanları) bölümünde sağ tıklayın ve "Attach..." (Ekle...) seçeneğini seçin.
+"Attach Databases" (Veritabanlarını Ekle) penceresinde "Add..." (Ekle...) butonuna tıklayın.
+Taşıdığınız Hastane.mdf dosyasını seçin ve "OK" butonuna tıklayın.
+Bağlantı Bilgilerini Güncelleme:
+
+2.Projede bulunan SqlBaglantisi dosyasını açın.
+
+Aşağıdaki bağlantı dizesini bulun:
+csharp
+Kodu kopyala
+"Data Source=Your Server Name;Initial Catalog=Hastane;Integrated Security=True"
+Data Source kısmındaki Your Server Name yerine kendi sunucu adınızı yazın. Örneğin:
+csharp
+Kodu kopyala
+"Data Source=YourServerName;Initial Catalog=Hastane;Integrated Security=True"
+Değişiklikleri kaydedin.

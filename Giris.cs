@@ -30,5 +30,7 @@ namespace Hastane
             fromDoktorGiris.Show();
             this.Hide();
         }
+
+        
     }
 }
